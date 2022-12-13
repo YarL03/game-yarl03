@@ -21,7 +21,7 @@ const Placeholder:FC<placeholderProps> = memo(({tokens, setTokens, setPlaceholde
         e.preventDefault()
         console.log('drop2', e, token, 'current: ', currentToken)
 
-        if (token.value == currentToken.value) {
+        if (token.value == currentToken?.value) {
             console.log(token.value, currentToken.value, currentToken)
             setPlaceholder(
                 placeholder.map((item: IToken) => {
