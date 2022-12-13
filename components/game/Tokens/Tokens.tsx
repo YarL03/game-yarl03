@@ -52,4 +52,6 @@ const Tokens:FC<tokensProps> = memo(({tokens, sprites, setCurrentToken}) => {
     )
 })
 
+Tokens.displayName = 'Tokens'
+
 export default Tokens
