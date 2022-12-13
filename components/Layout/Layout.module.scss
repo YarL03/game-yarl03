@@ -1,0 +1,11 @@
+.layout {
+    position: relative;
+    top: calc((100vh - 810px) / 2);
+    margin: 0 auto;
+    height: 810px;
+    max-width: 980px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

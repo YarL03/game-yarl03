@@ -1,0 +1,38 @@
+.placeholder {
+    margin-bottom: 30px;
+
+    > div {
+        height: 222px;
+        width: 886px;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 13px;
+
+        .token {
+            width: 131px;
+            height: 131px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px 10px rgba(#000000, .15) inset;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgba( hsl(0, 0%, 0%), .06);
+            margin: 0 5px;
+            user-select: none;
+
+            &[data-bg='true'] {
+                border-radius: initial;
+
+            }
+
+            > span {
+                font-size: 56px;
+                font-weight: 500;
+                -webkit-text-stroke: 2px rgba(36, 37, 70, 1);
+            }
+        }
+    }
+}

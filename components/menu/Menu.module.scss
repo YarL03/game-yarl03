@@ -1,0 +1,40 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+    padding: 20px;
+    background-image: linear-gradient(rgba(127, 117, 240, 1), rgba(16, 31, 50, 1));
+    border-radius: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: $black-color;
+    background-color: #fff;
+    background-clip: padding-box;
+    width: 700px;
+    height: 660px;
+    border-radius: 12px;
+    position: relative;
+    padding: 10px;
+    user-select: none;
+
+    .fstPart {
+        > div {
+            margin-bottom: 50px;
+        }
+    }
+
+    .sndPart {
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        > button:last-child {
+            margin-left: 36px;
+        }
+    }
+}
+

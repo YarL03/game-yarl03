@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+
+.container {
+    margin: 0 auto;
+
+    input[type='range'] {
+        -webkit-appearance: none !important;
+        background: $yellow;
+        height:21px;
+        width: 100%;
+
+        border-radius: 20px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+        cursor: pointer;
+        -webkit-appearance: none !important;
+        background-color: rgba(16, 73, 135, 1);
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+    }
+
+    .steps {
+        display: flex;
+        font-size: 24px;
+        font-weight: 700;
+        justify-content: space-between;
+        padding: 0 10px;
+        // width: 200px;
+
+        > span {
+            display: flex;
+            justify-content: center;
+            line-height: 50px;
+            width: 1px;
+            user-select: none;
+            // padding: 0 5px;
+
+            // &:first-child {
+            //     margin-left: 5px;
+            // }
+
+            // &:last-child {
+            //     // padding-left: 20px;
+            //     padding-right: 0;
+            // }
+        }
+    }
+}

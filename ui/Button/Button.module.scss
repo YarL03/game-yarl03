@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+
+.button {
+    cursor: pointer;
+    padding: 5px 15px;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background-color: $yellow;
+    color: $black-color;
+    transition: background-color .05s ease, opacity .3s ease, border-color .05s ease;
+
+    &[data-selected='true'] {
+        border-color: darken($green, 7%);
+    }
+
+    &[disabled] {
+        opacity: .7;
+        cursor: initial;
+    }
+
+    &:not(&[disabled]):hover {
+        background-color: darken($yellow, 10%);
+    }
+
+    &.play {
+        background-color: $green;
+        color: #fff;
+        padding: 10px 60px;
+
+        &:hover {
+            background-color: darken($green, 7%) !important;
+        }
+    }
+}
