@@ -12,16 +12,16 @@ type tokensProps = {
 
 const Tokens:FC<tokensProps> = memo(({tokens, sprites, setCurrentToken}) => {
 
-    const dropHandler = (e: DragEvent<HTMLDivElement>, token: IToken) => {
+    const dropHandler = (e: React.DragEvent<HTMLDivElement>, token: IToken) => {
         e.preventDefault()
         console.log('drop', e, token)
     }
 
-    const dragEnd = (e: DragEvent<HTMLDivElement>, token: IToken) => {
+    const dragEnd = (e: React.DragEvent<HTMLDivElement>, token: IToken) => {
         console.log('end', e, token)
     }
 
-    const dragStart = (e: DragEvent<HTMLDivElement>, token: IToken) => {
+    const dragStart = (e: React.DragEvent<HTMLDivElement>, token: IToken) => {
         console.log('start', e, token)
         setCurrentToken(token)
 }
