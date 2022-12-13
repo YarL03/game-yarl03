@@ -17,7 +17,7 @@ type placeholderProps = {
 
 const Placeholder:FC<placeholderProps> = memo(({tokens, setTokens, setPlaceholder, currentToken, placeholder, bgPlaceholder, sprites}) => {
     
-    const dropHandler = (e: any, token: IToken) => {
+    const dropHandler = (e: React.DragEvent<HTMLDivElement>, token: IToken) => {
         e.preventDefault()
         console.log('drop2', e, token, 'current: ', currentToken)
 
@@ -65,5 +65,7 @@ const Placeholder:FC<placeholderProps> = memo(({tokens, setTokens, setPlaceholde
         </div>
     )
 })
+
+Placeholder.displayName = 'Placeholder'
 
 export default Placeholder
